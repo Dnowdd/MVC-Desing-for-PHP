@@ -1,0 +1,10 @@
+# LIGA O REWRITE
+RewriteEngine on
+
+# REGRA DE REWRITE TUDO PARA INDEX
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^(.*)$ ./index.php [QSA,NC]
+
+# REGRA DE USO DO SSL
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]

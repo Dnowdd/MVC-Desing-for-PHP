@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Icon page -->
+    <link rel="icon" href="{{URL}}/resources/images/logos/logo-impusic-three.png">
+    <link rel="apple-touch-icon" href="{{URL}}/resources/images/logos/logo-impusic-three.png">
+
+    <!-- HTML Meta Tags -->
+    <title>{{title}}</title>
+    <meta name="description" content="{{description}}">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:url" content="{{URL}}">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="{{title}}">
+    <meta property="og:description" content="{{description}}">
+    <meta property="og:image" content="">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="{{URL}}">
+    <meta name="twitter:title" content="{{title}}">
+    <meta name="twitter:description" content="{{description}}">
+    <meta name="twitter:image" content="">
+
+    <!-- CSS DA PÁGINA -->
+    <link rel="stylesheet" href="{{URL}}/resources/css/pages/{{css}}.css">
+
+    <!-- HEADER E FOOTER CSS -->
+    <link rel="stylesheet" href="{{URL}}/resources/css/includes/header.css">
+    <link rel="stylesheet" href="{{URL}}/resources/css/includes/footer.css">
+    <link rel="stylesheet" href="{{URL}}/resources/css/includes/login.css">
+  </head>
+
+  <body>
+    <div class="container" id="contentContainer">
+      <!-- MENU DO SITE -->
+        {{header}}
+
+        {{register}}
+        {{login}}
+
+        <!-- TOAST DE STATUS -->
+        {{status}}
+
+      <!-- CONTEÚDO DE CADA PÁGINA -->
+      <div id="content">
+        {{content}}
+      </div>
+
+      <!-- RODAPÉ DO SITE -->
+        {{footer}}
+    </div>
+
+    <!-- JQUERY JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+    <!-- FONT AWESOME -->
+    <script src="https://kit.fontawesome.com/0beb279be2.js" crossorigin="anonymous"></script>
+    
+    <!-- HEADER JS -->
+    <script src="{{URL}}/resources/js/includes/header.js"></script>
+
+    <!-- JS DA PÁGINA -->
+    <script language="JavaScript" type="text/javascript" src="{{URL}}/resources/js/pages/{{css}}.js"></script>
+  </body>
+</html>
